@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://vpassanisi:tele.831@contact-keeper-p9wen.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "sdfgsergisdfnydhfgb"
+}
