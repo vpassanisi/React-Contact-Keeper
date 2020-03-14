@@ -6,6 +6,8 @@ const config = require("config");
 const { check, validationResult } = require("express-validator");
 const auth = require("../middleware/auth");
 
+const secret = process.env.SECRET || config.get("jwtSecret");
+
 const User = require("../models/User");
 
 // @route   GET api/auth
@@ -59,7 +61,7 @@ router.post(
 
       jwt.sign(
         payload,
-        config.get("jwtSecret"),
+        secret,
         {
           expiresIn: 360000
         },

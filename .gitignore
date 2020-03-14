@@ -1,7 +1,5 @@
 node_modules/
 
-/client/build
-
 .DS_Store
 
 /client/.env.local
@@ -12,3 +10,8 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+compare
+
+/config/default.json
+/config/production.json
