@@ -13,5 +13,4 @@ yarn-error.log*
 
 compare
 
-/config/default.json
-/config/production.json
+.env

@@ -1,10 +1,8 @@
 const mongoose = require("mongoose");
-const config = require("config");
-const db = process.env.MONGOURI || config.get("mongoURI");
 
 const connectDB = () => {
   mongoose
-    .connect(db, {
+    .connect(process.env.MONGOURI, {
       useNewUrlParser: true,
       useCreateIndex: true,
       useFindAndModify: false,
