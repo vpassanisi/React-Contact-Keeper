@@ -35,6 +35,11 @@ const About = props => {
       <button onClick={loginDemo} className="btn btn-lg btn-primary m-1">
         DEMO
       </button>
+      <br />
+      <p style={{ display: "inline" }}>Documentation for the Express API: </p>
+      <a href="./doc/doc.html" className="btn btn-success btn-lg m-1">
+        Documentation
+      </a>
       <p className="bg-dark p">
         <strong>Version: </strong> 1.0.0
       </p>
